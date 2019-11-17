@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "json-server": "^0.15.1",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -18,13 +19,13 @@
     "eject": "react-scripts eject"
   },
   "husky": {
-  "hooks": {
-    "pre-commit": "lint-staged"
-  }
-},
-"lint-staged": {
-  "src/**/*.js": "eslint"
-},
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -34,6 +35,7 @@
       "not dead",
       "not op_mini all"
     ],
+    "homepage": "/panel/",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
