@@ -6,7 +6,7 @@ import Login from './components/views/Login/Login';
 import Homepage from './components/views/Homepage/Homepage';
 import Kitchen from './components/views/Kitchen/Kitchen';
 import Order from './components/views/Order/Order';
-import OrderNew from './components/views/OrderNew/OrderNew';
+import OrderNew from './components/views/OrderingNew/OrderingNew';
 import Ordering from './components/views/Ordering/Ordering';
 import Tables from './components/views/Tables/Tables';
 import TablesBooking from './components/views/TablesBooking/TablesBooking';
@@ -20,10 +20,10 @@ function App() {
       <Switch>
         <Route exact path={`${process.env.PUBLIC_URL}/`} component={Homepage} />
         <Route exact path={process.env.PUBLIC_URL + '/login'} component={Login} />
-        <Route exact path={process.env.PUBLIC_URL + '/Kitchen'} component={Kitchen} />
+        <Route exact path={process.env.PUBLIC_URL + '/kitchen'} component={Kitchen} />
         <Route exact path={process.env.PUBLIC_URL + '/ordering'} component={Ordering} />
         <Route exact path={process.env.PUBLIC_URL + '/order/:id'} component={Order} />
-        <Route exact path={process.env.PUBLIC_URL + '/new'} component={OrderNew} />
+        <Route exact path={process.env.PUBLIC_URL + '/ordering/new'} component={OrderNew} />
         <Route exact path={process.env.PUBLIC_URL + '/tables'} component={Tables} />
         <Route exact path={process.env.PUBLIC_URL + '/booking/:id'} component={TablesBooking} />
         <Route exact path={process.env.PUBLIC_URL + '/event/:id'} component={TablesEvent} />
